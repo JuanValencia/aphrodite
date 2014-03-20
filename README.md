@@ -13,14 +13,17 @@ The result will be Hello ShareThis...
 yay!
 
 Supervisor Module : Restart programs when they crash 
+
 $ npm install -g supervisor
 
 Forever Module : Monitors the script specified in the current process
+
 $ npm install -g forever
 forever start app.js
 forever list
 forever stop [process number]
 
 Express Module : Rich Lib for webservice
+
 $ npm install -g express
 
