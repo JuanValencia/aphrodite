@@ -1,7 +1,3 @@
-Introduction
-============
-The Goal of this project is giving all ShareThis Engineers as well as employees code confidence. Plus, boost the engineers spirits (^-^) /
-
 How We Setup
 ============
 
