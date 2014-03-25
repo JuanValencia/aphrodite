@@ -22,6 +22,7 @@ forever stop [process number]
 Express Module : Rich Lib for webservice
 
 $ npm install express
-$ npm install mysql
-$ npm install ejs
 
+$ npm install mysql
+
+$ npm install ejs
