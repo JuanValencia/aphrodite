@@ -15,12 +15,12 @@ To install depedencies execute:
 
 Then, start the supervisor process.  Supervisor restart programs when they crash and monitors the script specified in the current process.
 
-`forever start app.js`
+`./node_modules/.bin/foreverstart node/app.js`
 
 Other helpful commands:
 
-`forever list`
+`./node_modules/.bin/forever list`
 
 and to stop a process use 
 
-`forever stop [process number]`
+`./node_modules/.bin/forever stop [process number]`
