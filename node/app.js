@@ -16,11 +16,11 @@ var projectName = "Aphrodite";
 
 // MySQL Configuration
 var client = mysql.createConnection({
-	user: 'USERNAME',
-	password: 'PASSWORD',
-	host: 'HOST',
+	user: 'sharethis',
+	password: 'sharethis',
+	host: 'adsdevdb.east.sharethis.com',
 	port: '3306',
-	database: 'DB'
+	database: 'aphrodite'
 });
 
 /**
