@@ -8,6 +8,8 @@ The result will be Hello ShareThis...
 
 yay!
 
+`npm install`
+
 Supervisor Module : Restart programs when they crash 
 Forever Module : Monitors the script specified in the current process
 forever start app.js
