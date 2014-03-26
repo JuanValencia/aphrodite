@@ -1,14 +1,18 @@
 How We Setup
 ============
 
-Visit http://nodejs.org and download install for Windows or Mac (Easy installation by clicking next !! )
-Once you finishes the setup, you can type "node" on the terminal, then it will shows REPL which is >
-Then type console.log("Hello ShareThis ...");
-The result will be Hello ShareThis...
+Install nodejs
 
-yay!
+for Mac OSX:
 
-To install depedencies execute:
+`brew install node`
+
+for Ubuntu:
+
+`sudo apt-get node`
+
+
+Then install depedencies execute:
 
 `npm install`
 
