@@ -8,10 +8,19 @@ The result will be Hello ShareThis...
 
 yay!
 
+To install depedencies execute:
+
 `npm install`
 
-Supervisor Module : Restart programs when they crash 
-Forever Module : Monitors the script specified in the current process
-forever start app.js
-forever list
-forever stop [process number]
+
+Then, start the supervisor process.  Supervisor restart programs when they crash and monitors the script specified in the current process.
+
+`forever start app.js`
+
+Other helpful commands:
+
+`forever list`
+
+and to stop a process use 
+
+`forever stop [process number]`
