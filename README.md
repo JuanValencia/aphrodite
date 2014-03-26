@@ -11,6 +11,10 @@ for Ubuntu:
 
 `sudo apt-get node`
 
+for Redhat:
+
+`sudo yum install node`
+
 
 Then install depedencies execute:
 
