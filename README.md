@@ -32,3 +32,9 @@ Other helpful commands:
 and to stop a process use 
 
 `./node_modules/.bin/forever stop [process number]`
+
+
+Troubleshooting
+===============
+
+If you are using linux, you might get "nodejs" instead of "node" as your executable.  This will cause issues with npm and express.  There is a ham radio app called "ax25-node" which "node" points to.  You can change the symlink to point "node" to "nodejs" instead of "ax25-node" to fix the issue.
