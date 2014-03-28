@@ -1,7 +1,7 @@
 Setup
 ============
 
-## Install nodejs
+### Install nodejs
 
 for Mac OSX:
 
@@ -16,11 +16,11 @@ for Redhat:
 `sudo yum install node`
 
 
-## Install project depedencies
+### Install project depedencies
 
 `npm install`
 
-## Run the server!
+### Run the server!
 
 `grunt nodemon`
 
