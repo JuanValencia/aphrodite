@@ -22,7 +22,7 @@ for Redhat:
 
 ### Run the server!
 
-`grunt nodemon`
+`./bin/grunt nodemon`
 
 
 Troubleshooting
