@@ -24,6 +24,8 @@ for Redhat:
 
 `./bin/grunt nodemon`
 
+visit `http://127.0.0.1:52273/` in your favorite browser.
+
 ### Run tests and coverage
 
 `./bin/grunt coverage`
