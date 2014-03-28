@@ -1,11 +1,17 @@
 {
-  "name": "aphrodite-node",
-  "version": "0.0.0",
-  "dependencies" : {
-    "express" : "3.5.1",
-    "ejs" : "1.0.0",
-    "mysql" : "2.1.1",
-    "supervisor" : "0.5.7",
-    "forever" : "0.10.11"
+    "name": "aphrodite-node",
+    "version": "0.0.0",
+    "dependencies": {
+        "express": "3.5.1",
+        "ejs": "1.0.0",
+        "mysql": "2.1.1",
+        "supervisor": "0.5.7",
+        "forever": "0.10.11",
+        "grunt-nodemon": "0.2.1",
+        "grunt-mocha-istanbul":  "0.2.0",
+        "grunt-cli": "0.1.13"
+    },
+    "scripts": {
+        "preinstall": "ln -fs ./node_modules/.bin ./bin"
     }
 }

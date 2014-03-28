@@ -1,38 +1,51 @@
-How We Setup
+Setup
 ============
 
-Install nodejs
+### Install nodejs
 
 for Mac OSX:
 
-`brew install node`
+```
+brew install node
+```
 
 for Ubuntu:
 
-`sudo apt-get node`
+```
+sudo apt-get node
+```
 
 for Redhat:
 
-`sudo yum install node`
+```
+sudo yum install node
+```
 
 
-Then install depedencies execute:
+### Install project depedencies
 
-`npm install`
+```
+npm install
+```
 
+### Run the server!
 
-Then, start the supervisor process.  Supervisor restart programs when they crash and monitors the script specified in the current process.
+```
+./bin/grunt nodemon
+```
 
-`./node_modules/.bin/foreverstart node/app.js`
+visit `http://127.0.0.1:52273/` in your favorite browser.
 
-Other helpful commands:
+### Run tests and coverage
 
-`./node_modules/.bin/forever list`
+```
+./bin/grunt coverage
+```
 
-and to stop a process use 
-
-`./node_modules/.bin/forever stop [process number]`
-
+To view the report:
+```
+open coverage/lcov-report/index.html 
+```
 
 Troubleshooting
 ===============
