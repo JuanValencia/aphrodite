@@ -42,6 +42,11 @@ visit `http://127.0.0.1:52273/` in your favorite browser.
 ./bin/grunt coverage
 ```
 
+To view the report:
+```
+open coverage/lcov-report/index.html 
+```
+
 Troubleshooting
 ===============
 
