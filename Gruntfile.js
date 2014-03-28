@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         mocha_istanbul: {
             coveralls: {
-                src: 'test', // the folder, not the files
+                src: 'tests', // the folder, not the files
                 options: {
                     coverage: true,
                     check: {

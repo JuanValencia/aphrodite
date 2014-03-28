@@ -6,7 +6,7 @@ var mysql = require('mysql'); // npm install mysql
 var ejs = require('ejs'); // npm install ejs
 
 // Import Custom Modules
-var example = require('./module/example.module.js');
+var example = require('./lib/example.module.js');
 
 
 
