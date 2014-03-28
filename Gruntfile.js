@@ -24,6 +24,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-mocha-istanbul');
     grunt.loadNpmTasks('grunt-nodemon');
 
-    grunt.registerTask('coveralls', ['mocha_istanbul:coveralls']);
+    grunt.registerTask('coverage', ['mocha_istanbul:coveralls']);
     grunt.registerTask('default', ['mocha_istanbul']);
 };

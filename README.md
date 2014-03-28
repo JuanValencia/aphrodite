@@ -24,6 +24,9 @@ for Redhat:
 
 `./bin/grunt nodemon`
 
+### Run tests and coverage
+
+`./bin/grunt coverage`
 
 Troubleshooting
 ===============
