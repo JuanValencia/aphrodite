@@ -8,8 +8,6 @@ var ejs = require('ejs'); // npm install ejs
 // Import Custom Modules
 var example = require('./lib/example.module.js');
 
-
-
 var app = express();
 app.use(express.bodyParser());
 app.use(app.router);
@@ -34,6 +32,14 @@ app.get('/', function (request, response) {
 app.get('/area/:radius', function (request, response) {
 	var radius = request.param('radius');
 	response.send("Area is " + example.circleArea(radius));
+});
+
+// dynamically include routes (Controller)
+fs.readdirSync('./controllers').forEach(function (file) {
+  if(file.substr(-3) == '.js') {
+      route = require('./controllers/' + file);
+      route.controller(app);
+  }
 });
 
 // Server Start
