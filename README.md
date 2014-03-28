@@ -11,26 +11,36 @@ brew install node
 
 for Ubuntu:
 
-`sudo apt-get node`
+```
+sudo apt-get node
+```
 
 for Redhat:
 
-`sudo yum install node`
+```
+sudo yum install node
+```
 
 
 ### Install project depedencies
 
-`npm install`
+```
+npm install
+```
 
 ### Run the server!
 
-`./bin/grunt nodemon`
+```
+./bin/grunt nodemon
+```
 
 visit `http://127.0.0.1:52273/` in your favorite browser.
 
 ### Run tests and coverage
 
-`./bin/grunt coverage`
+```
+./bin/grunt coverage
+```
 
 Troubleshooting
 ===============
