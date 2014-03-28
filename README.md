@@ -5,7 +5,9 @@ Setup
 
 for Mac OSX:
 
-`brew install node`
+```
+brew install node
+```
 
 for Ubuntu:
 
