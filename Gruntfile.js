@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         },
         nodemon: {
             dev: {
-                script: 'webapp/app.js',
+                script: 'app.js',
             },
         }
     });

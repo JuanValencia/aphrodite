@@ -1,40 +1,28 @@
-Setup
+How We Setup
 ============
 
-Install nodejs
+Visit http://nodejs.org and download install for Windows or Mac (Easy installation by clicking next !! )
+Once you finishes the setup, you can type "node" on the terminal, then it will shows REPL which is >
+Then type console.log("Hello ShareThis ...");
+The result will be Hello ShareThis...
 
-for Mac OSX:
+yay!
 
-`brew install node`
+Supervisor Module : Restart programs when they crash 
 
-for Ubuntu:
+$ npm install supervisor
 
-`sudo apt-get node`
+Forever Module : Monitors the script specified in the current process
 
-for Redhat:
+$ npm install forever
+forever start app.js
+forever list
+forever stop [process number]
 
-`sudo yum install node`
+Express Module : Rich Lib for webservice
 
+$ npm install express
 
-Then install depedencies execute:
+$ npm install mysql
 
-`npm install`
-
-
-Then, start the supervisor process.  Supervisor restart programs when they crash and monitors the script specified in the current process.
-
-`./node_modules/.bin/foreverstart node/app.js`
-
-Other helpful commands:
-
-`./node_modules/.bin/forever list`
-
-and to stop a process use 
-
-`./node_modules/.bin/forever stop [process number]`
-
-
-Troubleshooting
-===============
-
-If you are using linux, you might get "nodejs" instead of "node" as your executable.  This will cause issues with npm and express.  There is a ham radio app called "ax25-node" which "node" points to.  You can change the symlink to point "node" to "nodejs" instead of "ax25-node" to fix the issue.
+$ npm install ejs
