@@ -1,5 +1,5 @@
-exports.Project = {
-   name: String,
-   buildServerURL: String,
-   coverageReportURL: String,
+module.exports = function(db, cb) {
+    db.define('projects', {
+        name: String
+    });
 };

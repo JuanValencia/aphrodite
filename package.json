@@ -8,9 +8,16 @@
         "supervisor": "0.5.7",
         "forever": "0.10.11",
         "grunt-nodemon": "0.2.1",
-        "grunt-mocha-istanbul":  "0.2.0",
+        "grunt-mocha-istanbul": "0.2.0",
         "jsmockito": "1.0.4",
-        "grunt-cli": "0.1.13"
+        "grunt-cli": "0.1.13",
+        "orm": "2.1.4",
+        "async": "0.6.1",
+        "migrate-orm2": "1.2.6"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:socialize/aphrodite.git"
     },
     "scripts": {
         "preinstall": "ln -fs ./node_modules/.bin ./bin"

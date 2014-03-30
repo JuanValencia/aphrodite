@@ -21,11 +21,25 @@ for Redhat:
 sudo yum install node
 ```
 
-
 ### Install project depedencies
 
 ```
 npm install
+```
+
+### Create local mysql database
+
+If you don't have a local database installed, please install one with brew.
+```
+brew install mysql
+```
+
+Then create and add a local database and add a user
+```
+CREATE DATABASE aphrodite;
+CREATE USER 'aphrodev'@'localhost' IDENTIFIED BY '@phrod3v';
+GRANT ALL PRIVILEGES ON aphrodite.* TO 'aphrodev'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
 ```
 
 ### Run the server!
