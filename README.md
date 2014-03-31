@@ -29,9 +29,14 @@ npm install
 
 ### Create local mysql database
 
-If you don't have a local database installed, please install one with brew.
+If you don't have a local database installed, install one with brew for Mac OSX:
 ```
 brew install mysql
+```
+
+or yum for RedHat:
+```
+yum install mysql
 ```
 
 Then create and add a local database and add a user

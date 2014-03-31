@@ -5,9 +5,6 @@ var express = require('express'); // npm install express
 var mysql = require('mysql'); // npm install mysql
 var ejs = require('ejs'); // npm install ejs
 
-// Import Custom Modules
-var example = require('./lib/example.module.js');
-
 var app = express();
 app.use(express.bodyParser());
 app.use(app.router);

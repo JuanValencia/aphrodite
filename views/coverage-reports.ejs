@@ -1,1 +1,23 @@
-coverage goes here
+<% include header.ejs %>
+      <h2 class="sub-header">Projects with Coverage</h2>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Url</th>
+              <th>Coverage Url</th>
+            </tr>
+          </thead>
+          <tbody>
+          <% for(var i=0; i < projects.length; i++) {%>
+            <tr>
+              <td><%= projects[i].name %></td>
+              <td><%= projects[i].url %></td>
+              <td><%= projects[i].coverage_url %></td>
+            </tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+<% include footer.ejs %>
