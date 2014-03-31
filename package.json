@@ -21,6 +21,6 @@
         "url": "git@github.com:socialize/aphrodite.git"
     },
     "scripts": {
-        "postinstall": "ln -fs ./node_modules/.bin ./bin"
+        "postinstall": "/bin/ln -fs ./node_modules/.bin ./bin"
     }
 }
