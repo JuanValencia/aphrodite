@@ -2,7 +2,7 @@
 <div class="container">
    <div class="jumbotron">
       <h1>Aprodite Dashboard</h1>
-      <p class="lead">The Aphrodite dashboard demonstrates the confidence and beauty we have in our code</p>
+      <p class="lead">The Aphrodite dashboard is an open source project that demonstrates the confidence and beauty we have in our code</p>
    </div>
    <div class="panel  panel-primary">
       <div class="panel-heading">
@@ -10,19 +10,13 @@
       </div>
       <div class="panel-body">
          <table class="table table-striped">
-            <thead>
-               <tr>
-                  <th>Name</th>
-                  <th>Url</th>
-                  <th>Coverage Url</th>
-               </tr>
-            </thead>
             <tbody>
                <% for(var i=0; i < projects.length; i++) {%>
                <tr>
-                  <td><%= projects[i].name %></td>
-                  <td><%= projects[i].url %></td>
-                  <td><%= projects[i].coverage_url %></td>
+                  <td><h3><%= projects[i].name %></h3>
+                     <a href="<%= projects[i].url %>">Build <span class="glyphicon glyphicon-wrench"/></a> | 
+                     <a href="<%= projects[i].coverage_url %>">Coverage Report <span class="glyphicon glyphicon-tasks"/></a>
+                  </td>
                </tr>
                <% } %>
             </tbody>
