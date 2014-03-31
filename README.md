@@ -42,6 +42,11 @@ GRANT ALL PRIVILEGES ON aphrodite.* TO 'aphrodev'@'localhost' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
 
+Update your database by running the migrations
+```
+ ./bin/grunt migrate:up
+ ```
+
 ### Run the server!
 
 ```
