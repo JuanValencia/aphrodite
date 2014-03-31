@@ -13,25 +13,8 @@ app.use(express.bodyParser());
 app.use(app.router);
 app.set('view engine', 'ejs');
 
-var projectName = "Aphrodite";
-
-/**
- * Router
- */
-// Get
-app.get('/version', function (request, response) {
-	response.send("Project : " + projectName);
-});
-
-
 app.get('/', function (request, response) {
     response.render('index', { title: 'The index page!' });
-});
-
-// How to use custom module
-app.get('/area/:radius', function (request, response) {
-	var radius = request.param('radius');
-	response.send("Area is " + example.circleArea(radius));
 });
 
 // dynamically include routes (Controller)
