@@ -38,8 +38,12 @@ or yum for RedHat:
 ```
 yum install mysql mysql-server
 ```
+or apt-get for others:
+```
+sudo apt-get install mysql-server
+```
 
-Then create and add a local database and add a user
+Then create and add a local database and add the aphrodite user:
 ```
 CREATE DATABASE aphrodite;
 CREATE USER 'aphrodev'@'localhost' IDENTIFIED BY '@phrod3v';
