@@ -1,23 +1,33 @@
 <% include header.ejs %>
-      <h2 class="sub-header">Projects with Coverage</h2>
-      <div class="table-responsive">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Url</th>
-              <th>Coverage Url</th>
-            </tr>
-          </thead>
-          <tbody>
-          <% for(var i=0; i < projects.length; i++) {%>
-            <tr>
-              <td><%= projects[i].name %></td>
-              <td><%= projects[i].url %></td>
-              <td><%= projects[i].coverage_url %></td>
-            </tr>
-            <% } %>
-          </tbody>
-        </table>
+<div class="container">
+   <div class="jumbotron">
+      <h1>Aprodite Dashboard</h1>
+      <p class="lead">The Aphrodite dashboard demonstrates the confidence and beauty we have in our code</p>
+   </div>
+   <div class="panel  panel-primary">
+      <div class="panel-heading">
+         <h3 class="panel-title">Projects With Code Coverage</h3>
       </div>
+      <div class="panel-body">
+         <table class="table table-striped">
+            <thead>
+               <tr>
+                  <th>Name</th>
+                  <th>Url</th>
+                  <th>Coverage Url</th>
+               </tr>
+            </thead>
+            <tbody>
+               <% for(var i=0; i < projects.length; i++) {%>
+               <tr>
+                  <td><%= projects[i].name %></td>
+                  <td><%= projects[i].url %></td>
+                  <td><%= projects[i].coverage_url %></td>
+               </tr>
+               <% } %>
+            </tbody>
+         </table>
+      </div>
+   </div>
+</div>
 <% include footer.ejs %>
