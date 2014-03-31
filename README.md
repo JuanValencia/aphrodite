@@ -36,7 +36,7 @@ brew install mysql
 
 or yum for RedHat:
 ```
-yum install mysql
+yum install mysql mysql-server
 ```
 
 Then create and add a local database and add a user
